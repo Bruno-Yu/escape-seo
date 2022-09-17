@@ -26,11 +26,14 @@
     "keywords": "online learning, coding programs, polymer learning institution, JavaScript, Html, Vue, Node.js, Figma",
           "image": "https://bruno-yu.github.io/escape-seo/assets/images/banner.jpg",
     "url": "https://bruno-yu.github.io/escape-seo/",
-    "potentialAction": {
+    "potentialAction": [{
       "@type": "SearchAction",
-      "target": "https://bruno-yu.github.io/escape-seo/search?&q={query}",
-      "query": "required"
-    }
+        "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://bruno-yu.github.io/escape-seo/search?q={search_term_string}"
+      }
+      "query-input": "required name=search_term_string"
+    }]
 }
 </script>
 </head>
